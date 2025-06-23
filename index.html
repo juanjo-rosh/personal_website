@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juanjo Rosales Hernando - Portfolio</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Juan Jose Rosales Hernando</h1>
-    <p>Ingeniero de Telecomunicaciones | Científico e Ingeniero de Datos</p>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#About-me">About me</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Contact-Info">Contact Info</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Juanjo Rosales Hernando</h1>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog / CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="About-me">
-    <h2>About me</h2>
-    <p>Soy un ingeniero de telecomunicaciones con pasión por la ciencia de datos. Me dedico a resolver problemas complejos utilizando datos y tecnología.</p>
-  </section>
-
-  <section id="Projects">
-    <h2>Projects</h2>
-    <div class="proyecto">
-      <h3>Nombre del Proyecto 1</h3>
-      <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
-      <a href="#">Ver más</a>
+  <header id="home" class="hero">
+    <div class="container">
+      <h2>Telecommunications Engineer & Data Scientist</h2>
+      <p>Welcome to my professional portfolio.</p>
     </div>
+  </header>
 
-    <!-- Puedes duplicar esto para cada nuevo proyecto -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a hard-working, passionate, and dedicated individual with a strong interest in projects that combine technical rigor with real-world applications — particularly in areas like AI, communication systems, and data-driven decision-making.</p>
+    <p>Currently pursuing a Dual Bachelor’s Degree in Data Science & Engineering and Telecommunications Engineering, I’m driven by curiosity and a desire to bridge the gap between data, connectivity, and innovation.</p>
   </section>
 
-  <section id="Contact-Info">
-    <h2>Contact Info</h2>
-    <p>Correo: juanjorosales2004@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/juan-jose-rosales-hernando-30957634a/">tuusuario</a></p>
-    <p>GitHub: <a href="https://github.com/juanjo-rosh">tuusuario</a></p>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Short description of the project.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Short description of the project.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Short description of the project.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog / CV</h2>
+    <p>Soon I’ll be sharing posts and articles. You can also download my <a href="cv.pdf" target="_blank">résumé (PDF)</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: juanjorosales2004@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/juanjo-rosh" target="_blank">juanjo-rosh</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Juan Jose Rosales Hernando. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://github.com/juanjo-rosh" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/juan-jose-rosales-hernando-30957634a" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Juan Jose Rosales Hernando</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
